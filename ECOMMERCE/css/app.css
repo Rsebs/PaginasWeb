@@ -9,13 +9,26 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    line-height: 2;
 }
 
 
 /* Globales */
-
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
 }
 
 a {
@@ -36,7 +49,6 @@ img {
 /* Header y Navegación */
 .nombre-sitio {
     margin-top: 5rem;
-    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -58,17 +70,22 @@ img {
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 55rem;
 }
 
 /* Categorías */
-.categorias h2 a{
+.categorias {
+    padding-top: 5rem;
+}
+
+.categorias h2{
     text-align: center;
 }
 
 .categoria a {
-    display: block;
     text-align: center;
+    display: block;
     padding: 2rem;
     font-size: 2rem;
 }
@@ -84,4 +101,45 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+
+/* Bloque Nosotros*/
+.sobre-nosotros {
+    background-image: linear-gradient( to right, transparent 50%, #037BC0 50%, #037BC0 100%), url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+/** Estilo con Grid*
+* Utiliza Grid para definir el Layout de tu sitio web, como pueden ser
+* columnas o contenedores de elementos
+*/
+/*
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    color: #FFFFFF;
+}
+
+.texto-nosotros {
+    grid-column: 2 / 3;
+}
+*/
+
+/** Estilo con Flex*
+* Utiliza Flexbox para la alineación o distribución de los elementos
+* que estarán dentro de contenedores
+*/
+.sobre-nosotros-flex {
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+}
+
+.texto-nosotros {
+    flex-basis: 50%;
+    padding-left: 10rem;
 }
