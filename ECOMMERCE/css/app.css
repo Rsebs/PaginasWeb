@@ -55,9 +55,11 @@ img {
     padding: 1rem;
     transition: background-color .3s ease-out;
     text-align: center;
+    border: none;
 }
 .btn:hover {
     background-color: #769C02;
+    cursor: pointer;
 }
 
 /* Utilidades */
@@ -99,7 +101,7 @@ img {
 
 /* Categorías */
 .categorias {
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
 .categorias h2{
@@ -351,4 +353,12 @@ img {
 
 .campo label {
     flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+    flex: 1;
+    border: 1px solid #E1E1E1;
+    padding: 1rem;
 }
