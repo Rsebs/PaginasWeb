@@ -1,0 +1,143 @@
+:root {
+    --azul: #0071b7;
+    --blanco: #FFF;
+    --naranja: #ff4f1e;
+}
+html {
+    font-size: 62.5%; /** 1REM = 10pX **/
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: var(--azul);
+    font-family:  'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem 0;
+    padding: 1rem;
+}
+.caja-curso {
+    background-color: var(--naranja);
+    text-align: center;
+    color: var(--blanco);
+    padding: 5rem;
+
+}
+.caja-curso h1 {
+    margin: 0;
+}
+.caja-curso p {
+    font-size: 2.4rem;
+}
+.caja-curso a {
+    font-size: 2.4rem;
+    padding: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0;
+}
+
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.box {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 1rem solid #bb2b03;
+}
+
+.contenedor > div {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+
+
+/* 1 */
+.d-flex {
+    display: flex;
+}
+
+/* 2 */
+.d-flex-2 {
+    display: flex;
+    /* Por defecto el flex-direction será row sin necesidad de especificar */
+    flex-direction: row;
+    /* flex-direction: column; */
+}
+
+/* 3 */
+.d-flex-3 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 4 */
+.d-flex-4 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: flex-start;
+}
+
+/* 5 */
+.d-flex-5 {
+    display: flex;
+    height: 800px;
+    align-items: flex-start;
+}
+
+/* 6 */
+.d-flex-6 {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    align-items: flex-start;
+}
+
+/* 7 */
+.d-flex-7 {
+    display: flex;
+    height: 800px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* 8 */
+.d-flex-8 {
+    display: flex;
+}
+.d-flex-8 .box {
+    /* Da un ancho a los hijos
+    Basis es por así decirlo, un valor inicial
+    En caso de haber contenido que rebase la medida, dicho contenido va a crecer */
+    flex-basis: 100px;
+}
+
+/* 9 */
+.d-flex-9 {
+    display: flex;
+    /* Gap: Separación entre columnas y filas */
+    gap: 2rem;
+}
+.d-flex-9 .box {
+    flex-basis: 33.3%;
+}
+.d-flex-9 .box:nth-child(1) {
+    flex-basis: 50%;
+}
