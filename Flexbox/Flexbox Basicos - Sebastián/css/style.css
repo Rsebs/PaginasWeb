@@ -141,3 +141,48 @@ h1, h2 {
 .d-flex-9 .box:nth-child(1) {
     flex-basis: 50%;
 }
+
+/* 10 */
+.d-flex-10 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex-10 .box {
+    flex-basis: 33.3%;
+}
+
+/* 11 */
+/* Valor inicial de flex-grow es 0 */
+.d-flex-11 {
+    display: flex;
+}
+.d-flex-11 .box:nth-child(1) {
+    flex-grow: 2;
+}
+.d-flex-11 .box:nth-child(2),
+.d-flex-11 .box:nth-child(3) {
+    flex-grow: 1;
+}
+
+/* 12 */
+/* Valor inicial de flex-shrink es 1 */
+.d-flex-12 {
+    display: flex;
+}
+.d-flex-12 .box {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+.d-flex-12 .box:nth-child(3) {
+    flex-shrink: 2;
+}
+
+/* 13 */
+/* Es una unión entre flex-shrink, flex-grow y flex-basis*/
+/* flex: grow shrink basis*/
+.d-flex-13 {
+    display: flex;
+}
+.d-flex-13 .box {
+    flex: 1 0 33.3%;
+}
