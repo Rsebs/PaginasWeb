@@ -237,5 +237,5 @@ h1, h2 {
     grid-template-columns: repeat(auto-fit, 200px);
 
     /* Si quieres usar fr se debe de usar la función minmax() */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
