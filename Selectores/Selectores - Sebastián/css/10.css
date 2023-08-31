@@ -1,0 +1,23 @@
+/* a[atributo] */
+/*
+a[href="http://www.google.com"] {
+    color: red;
+}
+*/
+
+/* Todos los que inicien con http (^)*/
+/*
+a[href^="http"] {
+    color: red;
+}
+*/
+
+/* Todos los que terminen con .com ($)*/
+a[href$=".com"] {
+    color: red;
+}
+
+/* Cualquier otro atributo */
+input[value="1212"] {
+    border: 5px solid red;
+}

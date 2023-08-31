@@ -1,0 +1,4 @@
+/* No clase texto y no clase oferta*/
+p:not(.texto):not(.oferta) {
+    color: red;
+}
