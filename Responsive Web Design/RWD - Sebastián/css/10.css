@@ -1,0 +1,5 @@
+/* Snippet recomendable para usar en todos los proyectos y aplicar en imágenes */
+img {
+    max-width: 100%;
+    display: block;
+}

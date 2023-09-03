@@ -1,0 +1,21 @@
+/* Tamaños estándar */
+
+@media (min-width: 550px) {
+    /* Móvil en horizontal */
+}
+
+@media (min-width: 768px) {
+    /* Tablet portrait */
+}
+
+@media (min-width: 1024px) {
+    /* Landscape */
+}
+
+@media (min-width: 1200px) {
+    /* Laptop */
+}
+
+@media (min-width: 1600px) {
+    /* Extra large (monitores o Tvs) */
+}

@@ -1,0 +1,28 @@
+/* Ctrl + Shift + P (En VSCode)*/
+/*
+    Buscar: User Snippets 
+    Seleccionar: css.json
+    Configurar el media query
+
+    $1.. : posicion del cursor
+    \n : salto de linea
+    \t : tab
+    "nombre" : {
+        "prefix" : "atajo",
+        "body" : [
+            "contenido"
+        ]
+    }
+
+    "media query" : {
+        prefix" : "mq",
+        "body" : [
+            "@media (min-width: $1) {\n\t$2\n}"
+            ]
+    }
+    
+*/
+
+@media (min-width: null) {
+    
+}
