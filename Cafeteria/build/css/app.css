@@ -1,7 +1,6 @@
 body {
   background-color: red;
   font-size: 4rem;
-  display: -ms-flexbox;
   display: flex;
 }
 
