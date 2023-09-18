@@ -8,7 +8,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-  
+
 body {
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
@@ -47,4 +47,11 @@ h3 {
 ul {
     padding: 0;
     list-style: none;
+}
+.seccion {
+    padding: 3rem 0;
+
+    @include m.tablet {
+        padding: 8rem 0;
+    }
 }
